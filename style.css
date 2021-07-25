@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Goblin+One&display=swap');
+
+:root
+{
+    --violet: #511845;
+    --red1: #900C3F;
+    --red2: #C70039;
+    --orange: #FF5733;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Goblin One', 'Cinzel', sans-serif;
+    font-size: 16px;
+    background-image: url(/img/IMG_1358.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container
+{
+    display: grid;
+    grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+    height: 100vh;
+}
+
+h1, h5, h3, p
+{
+    color: rgb(247, 244, 244);
+}
+
+.item-1
+{
+    background: var(--red2);
+    grid-column: 1 / 16;
+    grid-row: 3 / 4;
+}
+.item-2
+{
+    background: var(--red2);
+    grid-column: 2 / 3;
+    grid-row: 5 / 21;
+}
+
+.item-3
+{
+    background: black;
+    grid-column: 20 / 21;
+    grid-row: 15 / 21;
+}
+
+.item-4
+{
+    font-size: 2rem;
+    grid-column: 3 / 4;
+    grid-row: 5 / 15;
+    display: grid;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.item-5
+{
+    font-size: 2rem;
+    grid-column: 4 / 16;
+    grid-row: 4 / 5;
+    display: grid;
+}
+
+.item-6
+{
+    grid-column: 10 / 16;
+    grid-row: 13 / 14;
+    display: grid;
+}
+
+.item-7
+{
+    grid-column: 10 / 16;
+    grid-row: 14 / 15;
+    display: grid;
+}
+
+.item-8
+{
+    font-size: 0.5rem;
+    grid-column: 16 / 19;
+    grid-row: 16 / 19;
+    display: grid;
+}
+
+.item-9
+{
+    font-size: 0.7rem;
+    grid-column: 20 / 21;
+    grid-row: 2 / 14;
+    display: grid;
+    writing-mode: vertical-lr;
+    align-items: end;
+}
